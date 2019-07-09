@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/calendar/calendar",
+    "pages/index/index",
+    "pages/about/about",
+    "pages/citychoose/citychoose",
+    "pages/setting/setting",
+    "pages/systeminfo/systeminfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Quiet Weather",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位以获取当前位置天气信息"
+    }
+  },
+  "cloud": false,
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#09BB07",
+    "list": [
+      {
+        "text": "日历",
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "img/calendar/calendar-normal.png",
+        "selectedIconPath": "img/calendar/calendar-selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "img/calendar/about-normal.png",
+        "selectedIconPath": "img/calendar/about-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
