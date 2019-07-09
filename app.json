@@ -1,7 +1,7 @@
 {
   "pages": [
+    "pages/weather/weather",
     "pages/calendar/calendar",
-    "pages/index/index",
     "pages/about/about",
     "pages/citychoose/citychoose",
     "pages/setting/setting",
@@ -30,7 +30,7 @@
         "selectedIconPath": "img/calendar/calendar-selected.png"
       },
       {
-        "text": "关于",
+        "text": "设置",
         "pagePath": "pages/about/about",
         "iconPath": "img/calendar/about-normal.png",
         "selectedIconPath": "img/calendar/about-selected.png"
