@@ -16,10 +16,12 @@
             <view class="calendar-body-cols" wx:for="1234567" wx:for-index="col" wx:key="*this">
                 <view class="calendar-body-item" hover="true" hover-class="view-hover" data-day-index="{{row * 7 + col}}" bindtap="selectDay">
                     <view hidden="{{!dateData.arrIsShow[row * 7 + col]}}">
-                        <view class="calendar-body-day">
+                        <!-- 显示阳历 -->
+                        <view class="calendar-body-day" style="color:{{dateData.arrDays[row * 7 + col]==detailData.curDay?'#e64340':''}}">
                             {{dateData.arrDays[row * 7 + col]}}
                         </view>
-                        <view class="calendar-body-dayex">
+                        <!-- 显示农历 -->
+                        <view class="calendar-body-dayex" style="color:{{dateData.arrDays[row * 7 + col]==detailData.curDay?'#e64340':''}}">
                             {{dateData.arrInfoExShow[row * 7 + col]}}
                         </view>
                         <view class="calendar-body-workturn" style="color:{{workTurnData.arrWorkTurn[row * 7 + col] === '休' ? '#09BB07' : '#e64340'}}" hidden="{{!isWorkTurn}}">

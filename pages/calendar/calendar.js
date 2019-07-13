@@ -119,7 +119,6 @@ var refreshPageData = function (year, month, day) {
   curMonth = month;
   curYear = year;
   curDay = day;
-
   pageData.dateData.date = curYear + '年' + (curMonth + 1) + '月';
 
   var offset = getOffset();
